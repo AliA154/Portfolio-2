@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class TBurgers {
+   public static void main(String[] args) {
+      Scanner input = new Scanner(System.in);
+        int Burger = 0;
+        int Fries = 0;
+        int MilkShake = 0;
+        boolean addBurgers = true;
+        String choice;
+        
+        
+        While (addBurgers == true) {
+            System.out.print("\n Enter number of burger: ");
+            int amt = input.nextInt();
+            Burger += amt;
+        if(no >= 21) {
+           MilkShake++;
+           Fries++;
+         }
+        else if (amt >= 20)
+           MilkShake++;
+        else if (amt >= 10)
+           Fries++;            
+        
+        System.out.print("\n Would you like to order more burgers? (Yes/No): ");
+        String choice = input.next().toUpperCase();
+        if (choice.equals("NO")) {
+          addBurgers = false;
+        }//looking for NO
+            
+            
+        
+        
+        System.out.print("\n You order details. \n Number of burger: " + Burger +
+                "\n Number of free Fries: " + Fries + 
+                "\n Number of free Milk Shake: " + MilkShake +
+                "\n Amount: $" + (Burger * 0.6));
+        
+        
+        if(Burger > 57)
+            System.out.print("\n Congraturation you made a new record for " +
+                    "ordering burger.");
+        input.close();
+    }
+}

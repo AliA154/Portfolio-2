@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class UsingMath5 {
+  public static void main (String[] args) {
+    Scanner input = new Scanner(System.in); 
+    
+//   1) 145 % 10 => 5
+//   2) 145 % 100 => 45
+//   3) 145 / 10 => 14 truncating the decimlas. 
+//   4) 145 / 100 => 1
+    System.out.println("145 % 10 = " + (145 % 10) );
+    System.out.println("145 % 10 = " + (145 % 10) );
+    System.out.println("145 / 10 = " + (145 / 10) );
+    System.out.println("145 / 10 = " + (145 / 10) );
+  
+    
+    
+    
+    
+    
+    
+    
+    input.close();  
+  }//end main
+}//end class 

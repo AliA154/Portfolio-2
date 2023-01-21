@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class StringInfo1 {
+  public static void main (String[] args) {
+    Scanner input = new Scanner(System.in);
+    
+    String movie;
+    
+    System.out.print("What is your favorite movie? ");
+    movie = input.nextLine();
+    
+    System.out.println("Your favorite movie is "+movie);
+    
+    
+    input.close();  
+  }//end main
+}//end class 

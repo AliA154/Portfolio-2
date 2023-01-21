@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class UsingLoops2 {
+  public static void main (String[] args) {
+    Scanner input = new Scanner(System.in);
+    int start;
+    
+    System.out.print("Which number would you like to start from? ");
+    start = input.nextInt();
+    
+    for () {
+     System.out.println(); 
+    }
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    input.close()  
+  }//end main
+}//end class 

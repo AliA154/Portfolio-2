@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class UsingMath1 {
+  public static void main (Strings[] args) {
+  Scanner input = new Scanner(System.in);  
+    
+    
+    
+    
+  
+  
+  
+  input.close();
+  }//endmain
+}//end class 

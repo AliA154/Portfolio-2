@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class StringIntro3 {
+  public static void main (String[] args) {
+    Scanner input = new Scanner(System.in);
+    
+    String name, monogram, firstInital, lastIntial;
+    
+    System.out.print("What is your full name? ");
+    name = input.nextLine();
+    
+    
+    System.out.println("Your name is "+name);
+    
+    
+    
+    
+    input.close();  
+  }//end main
+}//end class

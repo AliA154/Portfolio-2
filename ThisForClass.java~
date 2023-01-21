@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class ThisForClass {
+  public static void main (String[] args) {
+    //Declarations 
+    Scanner input = new Scanner(System.in);
+    
+    for (int count = 1; count <= 10; count++) {
+     System.out.print("Welcome to Java"); 
+    }
+    
+    
+    
+    
+    
+    
+  }//end main
+}//end class

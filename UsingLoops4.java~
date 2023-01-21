@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class UsingLoops4 {
+  public static void main (String[] args) {
+    //Declarations 
+    Scanner input = new Scanner(System.in);
+    
+    
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    input.close()  
+  }//end main
+}//end class 

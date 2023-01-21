@@ -1,0 +1,18 @@
+import java.util.Scanner;
+import java.text.DecimalFormat;
+
+public class SQDecFormat {
+  public static void main (String[] args) {
+    Scanner input = new Scanner(System.in); 
+    DecimalFormat df = new DecimalFormat(""); 
+    
+    String food = System.out.print("How many Burgers, Chicken Sandwhichs, Filet of Fish, Nuggets, Fries, Milk Shake, or Soda would you like? ");
+    food = input.nextLine();
+    System.out.println("I would like "+ food);
+    
+    
+    
+    
+    input.close();  
+  }//end main
+}//end class 

@@ -1,0 +1,98 @@
+import java.util.*;
+
+public class MonsterGame {
+  //**************** METHOD AREA *******************
+  public static void greeting() {
+    System.out.println("Welcome to Ali's game of Monsters.");
+  }//end greeting
+  
+  public static void charSel(){
+    System.out.println("The following are Builds that you can use: ");
+    System.out.println("1 - Strong");
+    System.out.println("2 - Tank");
+    System.out.println("3 - Average");
+    System.out.println("0 - Exit");
+  }//end charSel
+  
+   public static String inputWord(){
+    Scanner input = new Scanner(System.in);
+    String word = input.next();
+    input.close();
+    return word;
+  }//end inputWord
+  
+  public static void prtSol(String word, int num){
+    System.out.println("You Chose the "+ word + " build ");
+  }
+ 
+  public static void strongBuild() {
+    
+    int num1 = (int)(Math.random() * 4) + 8;
+    int num2 = (int)(Math.random() * 5) + 1;
+    int num3 = (int)(Math.random() * 3) + 2;
+    prtSol("Strength", num1);
+    prtSol("Defense", num2);
+    prtSol("Speed", num3);
+  }//end strongBuild
+  
+   public static void tankBuild() {
+    
+    int num1 = (int)(Math.random() * 3) + 2;
+    int num2 = (int)(Math.random() * 4) + 8;
+    int num3 = (int)(Math.random() * 5) + 1;
+    prtSol("Strength", num1);
+    prtSol("Defense", num2);
+    prtSol("Speed", num3);
+  }//end strongBuild
+   
+    public static void averageBuild() {
+    
+    int num1 = (int)(Math.random() * 5) + 4;
+    int num2 = (int)(Math.random() * 5) + 4;
+    int num3 = (int)(Math.random() * 5) + 4;
+    prtSol("Strength", num1);
+    prtSol("Defense", num2);
+    prtSol("Speed", num3);
+  }//end strongBuild
+   
+   public static String userChoose(){
+     System.out.print("Please select the build you would like to use: ");
+     String choice = inputWord();
+     return choice;
+   }//end useerChoose
+   
+   public static void payload(String ans){
+     if (ans.toLowerCase().substring(0,3).equals("str")) {
+       strongBuild();
+     }//end strengthBuild
+     else if (ans.toLowerCase().substring(0,3).equals("tan")) {
+       tankBuild();
+     }//end tankBuild
+     else if (ans.toLowerCase().substring(0,3).equals("ave")) {
+       averageBuild();
+     }//end averageBuild
+     else if (ans.toLowerCase().substring(0,4).equals("Exit")) {
+       calcExit();
+     }//end exit
+   }//end payload
+   
+   public static void info(String bui){
+     System.out.println("For "+bui+" you will need to enter str, tan, or ave.");
+   }//end info
+   public static void calcExit() {
+     System.exit(1);
+   }//end calcExit()
+  //***************END METHOD AREA *****************
+  public static void main(String[] args){
+    
+    greeting();
+    
+    while(true) {
+      charSel();
+      String ans = userChoose();
+      payload(ans);
+    }
+    
+    
+  }//end main
+}//end class

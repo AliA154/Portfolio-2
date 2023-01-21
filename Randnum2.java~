@@ -1,0 +1,14 @@
+public class Randnum2 {
+  public static void main (String[] args) {
+    
+    System.out.print("Random number from 0 - 11: ");
+    System.out.println((int)(Math.random() * 12));
+    
+  
+  
+  
+  
+  
+  
+  }//end main
+}//end class

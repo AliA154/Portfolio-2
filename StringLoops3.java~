@@ -1,0 +1,52 @@
+import java.util.*;
+
+public class StringLoops3 {
+  public static void main (String[] args) {
+     //Declarations 
+     Scanner input = new Scanner(System.in);
+     String name;
+     int len;
+     
+     System.out.print("Please enter your name: ");
+     name = input.nextLine();
+     len = name.length();
+     
+     System.out.print("Name replace vowel with !: ");
+     for (int i = 0;i < len ;i++) {
+       if (name.charAt(i) == 'a' || name.charAt(i) == 'e' || name.charAt(i) == 'i' || name.charAt(i) == 'o' || name.charAt(i) == 'u') {
+         System.out.print("!");
+       }//finds a vowel, replaces with !
+       else {
+         System.out.print(name.charAt(i));
+       }//NOT a vowel
+     }//end for loop replace vowel with !
+     System.out.println();
+  
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     input.close();  
+  }//end main
+}//end class

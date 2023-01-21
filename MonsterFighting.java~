@@ -1,0 +1,37 @@
+import java.util.*;
+
+public class MonsterFighting {
+  //**************** METHOD AREA *******************
+  public static void greeting() {
+    System.out.println("Welcome to Ali's Game of Monsters.");
+  }//end greeting
+  
+
+
+  //***************END METHOD AREA *****************
+  public static void main (String[] args) {
+    
+  greeting();
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    input.close()  
+  }//end main
+}//end class 

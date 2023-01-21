@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class StarWarNameGenerator {
+  public static void main (String[] args) {
+    Scanner input = new Scanner(System.in);
+    
+    String firstName, lastName, motherM, city, car;
+    
+    System.out.print("Enter your first name: ");
+    firstName = input.nextLine();
+    System.out.print("Enter your last name: ");
+    lastName = input.nextLine();
+    System.out.print("Enter your mother's maiden name: ");
+    motherM = input.nextLine();
+    System.out.print("Enter the city you were born name: ");
+    city = input.nextLine();
+    System.out.print("Enter the first car you drove: ");
+    car = input.nextLine();
+    
+    
+    
+    
+    input.close();  
+  }//end main
+}//end class 
